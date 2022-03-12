@@ -91,7 +91,7 @@ prepare_configuration() {
 
 maybe_enable_jemalloc() {
     if [ "${DISABLE_JEMALLOC:-false}" == "false" ]; then
-        export LD_PRELOAD=$LD_PRELOAD:/usr/lib/x86_64-linux-gnu/libjemalloc.so
+        export LD_PRELOAD=$LD_PRELOAD:/usr/lib/aarch64-linux-gnu/libjemalloc.so
     fi
 }
 
